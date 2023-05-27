@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>LBL</title>
+  <style>
+    body {
+      background-color: white;
+      font-family: 'San Francisco', Arial, sans-serif;
+      text-align: center;
+    }
+
+    header {
+      padding: 20px;
+      background-color: #000000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    footer {
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      font-size: 14px;
+    }
+
+    .menu {
+      position: relative;
+      display: inline-block;
+    }
+
+    .menu-btn {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      padding: 30px;
+      background-color: #000000;
+      color: white;
+    }
+
+    .menu-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #f1f1f1;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .menu:hover .menu-content {
+      display: block;
+    }
+
+    form {
+      display: inline-block;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 8px 16px;
+      background-color: #000000;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #333333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="menu">
+      <div class="menu-btn">
+        <span>&#9776;</span> Menu
+      </div>
+      <div class="menu-content">
+        <a href="about_us.html">ABOUT US</a>
+        <a href="contents.html">CONTENTS</a>
+        <a href="topic.html">TOPIC</a>
+        <a href="Little_By_Little.html">CONTACT</a>
+      </div>
+    </div>
+    <img src="logo.png" alt="LBL_Logo">
+  </header>
+  
+  <main>
+    <h2>Thank you for visiting</h2>
+    <p>Welcome to the 'Little By Little' website.</p>
+    <p>We provide assistance with studying and language learning online!</p>
+  </main>
+  
+  <section>
+    <h1>CONTACT US</h1>
+    <form action="#" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  
+  <section>
+    <h1>LOGIN</h1>
+    <form action="#" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+      <button type="submit">Log in</button>
+      <a href="newpass.html">Register here</a>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2023 Little By Little. All rights reserved.
+  </footer>
+</body>
+</html>
+

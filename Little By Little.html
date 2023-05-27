@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>LBL</title>
+  <style>
+    body {
+      background-color: white;
+      font-family: 'San Francisco', Arial, sans-serif;
+      text-align: center;
+    }
+
+    header {
+      padding: 20px;
+      background-color: #000000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    footer {
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      font-size: 14px;
+    }
+
+    .menu {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+    }
+
+    .menu-btn {
+      cursor: pointer;
+      padding: 10px;
+      background-color: #000000;
+      color: white;
+      margin-right: 10px;
+    }
+
+    .menu-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #f1f1f1;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .menu:hover .menu-content {
+      display: block;
+    }
+
+    form {
+      display: inline-block;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 8px 16px;
+      background-color: #000000;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #333333;
+    }
+
+    .logo-container {
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .logo-container img {
+      max-height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="LBL_Logo">
+    </div>
+    <div class="menu">
+      <div class="menu-btn">
+        &#9776; メニュー
+      </div>
+      <div class="menu-content">
+        <a href="about_us.html">ABOUT US</a>
+        <a href="contents.html">CONTENTS</a>
+        <a href="topic.html">TOPIC</a>
+        <a href="Little By Little.html">CONTACT</a>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="menu-btn">
+        LANGUAGE &#9776;
+      </div>
+      <div class="menu-content">
+        <a href="Little By Little.html">日本語</a>
+        <a href="Little By Little_EN.html">ENGLISH</a>
+        <a href="Little By Little_FR.html">FRANÇAIS</a>
+        <a href="Little By Little_CH.html">中文</a>
+        <a href="Little By Little_CO.html">한국어</a>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <h2>ご訪問いただきありがとうございます</h2>
+    <p>'Little By Little'のホームページです。</p>
+    <p>Web上で勉強や語学のお手伝いをしています！</p>
+  </main>
+  
+  <section>
+    <h1>CONTACT US</h1>
+    <form action="#" method="POST">
+      <label for="name">お名前:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">メアド:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="message">お問い合わせ内容:</label>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+      <button type="submit">送信</button>
+    </form>
+  </section>
+  
+  <section>
+    <h1>LOGIN</h1>
+    <form action="#" method="POST">
+      <label for="username">ユーザー名:</label>
+      <input type="text" id="username" name="username" required><br><br>
+      <label for="password">パスワード:</label>
+      <input type="password" id="password" name="password" required><br><br>
+      <button type="submit">ログイン</button>
+      <a href="newpass.html">登録はこちら</a>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2023 Little By Little. All rights reserved.
+  </footer>
+</body>
+</html>
